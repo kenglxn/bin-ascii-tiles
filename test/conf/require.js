@@ -1,5 +1,5 @@
 require.config({
   deps: ["./jam/require.config"],
-  baseUrl:'.',
+  baseUrl:'..',
   urlArgs: new Date().getTime(),
 });
