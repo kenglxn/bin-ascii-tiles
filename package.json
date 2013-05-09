@@ -1,0 +1,14 @@
+{
+  "name": "cs-amd-mocha-testem",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "jam": {
+    "dependencies": {
+      "chai": null,
+      "coffee-script": null,
+      "cs": null,
+      "mocha": null
+    }
+  }
+}

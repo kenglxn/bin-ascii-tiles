@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="../jam/mocha/mocha.css"/>
+
+<script src="../jam/mocha/mocha.js"></script>
+<script src="/testem.js"></script>
+<script src="../jam/require.js"></script>
+<script src="../conf/require.js"></script>
+
+<script>
+  var tests = [];
+  {{#serve_files}}
+    tests.push('cs!{{src}}'.replace('.coffee', ''));
+  {{/serve_files}}
+  require(['cs!test/runner'], function(Runner) {
+    new Runner(tests);
+  });
+</script>
+
+<div id="mocha"></div>
